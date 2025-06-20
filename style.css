@@ -1,0 +1,188 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #B3CEE5; /* Light background color */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.invitation-card {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Adjust max-width as needed for a mobile-like card */
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: visible;
+    background-image: url('https://i.imgur.com/UvC5qQx.png'); /* Arch shape background */
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+}
+
+/* Decorative images positioning */
+.decorative-item {
+    position: absolute;
+    z-index: 0; /* Ensure images are above the background arch but within the card */
+    opacity: 0.8; /* Slightly transparent */
+}
+
+.top-left {
+    width: 80px;
+    top: 20px;
+    left: 10px;
+}
+
+.top-right {
+    width: 100px;
+    top: 10px;
+    right: 10px;
+}
+
+.middle-left {
+    width: 100px;
+    top: 290px;
+    left: 0px;
+    transform: rotate(-10deg);
+}
+
+.middle-right {
+    width: 100px;
+    top: 320px;
+    right: -30px;
+    transform: rotate(200deg);
+}
+
+.bottom-left {
+    width: 120px;
+    bottom: -55px;
+    left: 10px;
+}
+
+
+.greeting {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #6a6a6a;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8em;
+    color: #13558b; /* A warm brown color */
+    margin-bottom: 25px;
+    line-height: 1.2;
+    position: relative;
+    z-index: 2;
+}
+
+.details {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.details p {
+    font-size: 1em;
+    color: #555555;
+    margin: 5px 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B3CEE5; /* A softer, complementary color */
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0px 15% 0px 15%;
+}
+
+.btn:hover {
+    background-color: #b3b8e5;
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    color: #6a6a6a;
+    line-height: 1.4;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 480px) {
+    .invitation-card {
+        padding: 30px 15px;
+    }
+
+    .title {
+        font-size: 2.2em;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .top-left {
+        width: 60px;
+        top: 15px;
+        left: 5px;
+    }
+
+    .top-right {
+        width: 80px;
+        top: 5px;
+        right: 5px;
+    }
+
+    .middle-left {
+        width: 70px;
+        top: 250px;
+        left: -5px;
+    }
+
+    .middle-right {
+        width: 80px;
+        top: 270px;
+        right: -5px;
+    }
+
+    .bottom-left {
+        width: 100px;
+        bottom: 15px;
+        left: 5px;
+    }
+}
