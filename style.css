@@ -181,7 +181,7 @@ body {
 
     .bottom-left {
         width: 100px;
-        bottom: 15px;
-        left: 5px;
+        bottom: -25px;
+        left: 15px;
     }
 }
